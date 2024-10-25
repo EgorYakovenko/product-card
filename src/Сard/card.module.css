@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  justify-content: flex-end; /* Выровнять Card вправо */
+  padding: 20px;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+}

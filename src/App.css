@@ -1,3 +1,9 @@
+.container {
+  display: flex;
+  justify-content: flex-end; /* Выровнять Card вправо */
+  padding: 20px;
+}
+
 /* #root {
   max-width: 1280px;
   margin: 0 auto;

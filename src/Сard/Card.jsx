@@ -1,55 +1,26 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import css from "./card.module.css";
-import ak47 from "../assets/ak-47.jpg";
-import fnSkar from "../assets/fn-scar.jpg";
-import sigSauer from "../assets/sig-sauer.jpg";
-
+import ak47 from "../assets/1_AK.png";
+import ak47_2 from "../assets/2_AK.png";
+import ak47_3 from "../assets/3_AK.png";
+import { Theme } from "@radix-ui/themes";
 export default function Card() {
   return (
     <Swiper
-      spaceBetween={50}
+      spaceBetween={10}
       slidesPerView={1}
       onSlideChange={() => console.log("slide change")}
       onSwiper={(swiper) => console.log(swiper)}
     >
       <SwiperSlide className={css.container}>
-        <img src={ak47} width={500} height={300} alt="ak47" />
-        <div className={css.textContainer}>
-          <p>AK 47</p>
-          <p>
-            Калибр: 7,62×39 мм. Деревянные части приклад, цевье и пистолетная
-            рукоятка придают классический вид. Магазин на 30 патронов изогнутой
-            формы. Газоотводная автоматика и простая конструкция делают его
-            надежным и эффективным в различных условиях эксплуатации.
-          </p>
-        </div>
+        <img src={ak47} width={400} height={300} alt="ak47" />
       </SwiperSlide>
       <SwiperSlide className={css.container}>
-        <img src={fnSkar} width={500} height={300} alt="fnSkar" />
-        <div className={css.textContainer}>
-          <p>FN SCAR</p>
-          <p>
-            Регулируемый приклад и телескопическая система — характерная
-            особенность FN SCAR. Планки Picatinny на ствольной коробке и цевье
-            позволяют крепить различные аксессуары, такие как оптические
-            прицелы, фонари или лазеры. Дизайн ствола с дульным
-            компенсатором/тормозом и газоотводная система напоминают конструкцию
-            SCAR, известного своей модульностью.
-          </p>
-        </div>
+        <img src={ak47_2} width={400} height={300} alt="fnSkar" />
       </SwiperSlide>
       <SwiperSlide className={css.container}>
-        <img src={sigSauer} width={500} height={300} alt="sigSauer" />
-        <div>
-          <p>SIG SAUER</p>
-          <p>
-            Металлический корпус с черной матовой отделкой. Рифленая затворная
-            рама, что улучшает удобство перезарядки. Эргономичная рукоятка с
-            текстурой для лучшего хвата. Патроны, изображенные рядом, скорее
-            всего, калибра 9 мм, что типично для подобных пистолетов.
-          </p>
-        </div>
+        <img src={ak47_3} width={400} height={300} alt="sigSauer" />
       </SwiperSlide>
       ...
     </Swiper>

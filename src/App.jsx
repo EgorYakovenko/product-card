@@ -1,3 +1,4 @@
+import { Theme } from "@radix-ui/themes";
 import { useState } from "react";
 // import reactLogo from "./assets/react.svg";
 // import viteLogo from "/vite.svg";
@@ -9,11 +10,10 @@ import Card from "./Сard/Card";
 function App() {
   return (
     <>
-      {/* <Footer /> */}
+      <Footer />
+      <Card />
 
-      <div className="container">
-        <Card />
-      </div>
+      {/* <div className="container"></div> */}
     </>
   );
 }

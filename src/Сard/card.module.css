@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  justify-content: flex-end; /* Выровнять Card вправо */
+  justify-content: center;
   padding: 20px;
 }
 
